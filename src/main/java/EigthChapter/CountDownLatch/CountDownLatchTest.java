@@ -9,9 +9,8 @@ import java.util.concurrent.CountDownLatch;
  */
 public class CountDownLatchTest {
     public static void main(String[] args) throws InterruptedException{
-        CountDownLatch c = new CountDownLatch(2);
+        final CountDownLatch c = new CountDownLatch(2);
         new Thread(new Runnable() {
-            @Override
             public void run() {
                 System.out.println(1);
                 c.countDown();

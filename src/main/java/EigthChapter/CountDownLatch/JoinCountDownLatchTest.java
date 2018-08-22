@@ -8,14 +8,12 @@ package EigthChapter.CountDownLatch;
 public class JoinCountDownLatchTest {
     public static void main(String[] args) throws InterruptedException {
         Thread parser1 = new Thread(new Runnable() {
-            @Override
             public void run() {
                 System.out.println("parser1 finished");
             }
         });
 
         Thread parser2 = new Thread(new Runnable() {
-            @Override
             public void run() {
                 System.out.println("parser2 finished");
             }
