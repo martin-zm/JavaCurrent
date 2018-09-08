@@ -15,7 +15,6 @@ public class Consumer implements Runnable{
         this.blockingQueue = blockingQueue;
     }
 
-    @Override
     public void run() {
         while (true) {
             try {
